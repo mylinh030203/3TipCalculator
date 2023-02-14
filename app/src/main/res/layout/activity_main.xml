@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="732dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioGroup
+            android:id="@+id/rgroup"
+            android:layout_width="407dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="402dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rbamazing"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/amazing_20" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rbgood"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:text="@string/good_15" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rbok"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/okay_10" />-->
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbamazing"
+                android:text="@string/amazing_20"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbgood"
+                android:text="@string/good_15"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbok"
+                android:text="@string/okay_10"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btntip"
+            android:layout_width="408dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="79dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="320dp"
+            android:text="@string/calculator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgroup" />
+
+        <TextView
+            android:id="@+id/tvamount"
+            android:layout_width="101dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="245dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="287dp"
+            android:text="@string/tip_amount"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btntip"
+            app:layout_constraintVertical_bias="0.75" />
+
+        <Switch
+            android:id="@+id/switchROT"
+            android:layout_width="400dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="1dp"
+            android:text="@string/round_of_tip"
+            app:layout_constraintBottom_toTopOf="@+id/btntip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgroup"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <EditText
+            android:id="@+id/etcost"
+            android:layout_width="407dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginBottom="37dp"
+            android:ems="10"
+            android:hint="@string/cost"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/rgroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Autofill" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

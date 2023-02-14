@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">3TipCalculator</string>
+    <string name="amazing_20">Amazing (20%)</string>
+    <string name="okay_10">Okay (10%)</string>
+    <string name="good_15">Good (15%)</string>
+    <string name="calculator">Calculator</string>
+    <string name="tip_amount">Tip Amount</string>
+    <string name="round_of_tip">Round of tip?</string>
+    <string name="cost">Cost</string>
+</resources>
